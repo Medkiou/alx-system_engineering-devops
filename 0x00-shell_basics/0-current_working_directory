@@ -1,2 +1,5 @@
 #!/bin/bash
-pwd
+cwd=$(pwd) 
+abs_path=$(realpath $cwd) 
+
+echo $abs_path
